@@ -1,3 +1,4 @@
 class CashRegister
-  attr_accessor
+  def cash_register
+    
 end
