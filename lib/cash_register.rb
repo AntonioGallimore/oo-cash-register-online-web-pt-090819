@@ -6,4 +6,20 @@ class CashRegister
     self.items = []
     self.last_transaction_amount = 0
   end
+    def total=(value)
+    @total = value
+  end
+
+  def discount=(value)
+    @discount = value
+  end
+
+  def discount
+    @discount
+  end
+
+  def total
+    @total
+  end
+
 end
