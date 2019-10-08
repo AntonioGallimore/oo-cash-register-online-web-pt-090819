@@ -8,21 +8,21 @@ class CashRegister
     #self.last_transaction_amount = 0
   #end
   
-  def total=(value)
-    @total = value
-  end
+  #def total=(value)
+   # @total = value
+  #end
 
-  def discount=(value)
-    @discount = value
-  end
+  #def discount=(value)
+   # @discount = value
+  #end
 
-  def discount
-    @discount
-  end
+  #def discount
+   # @discount
+  #end
 
-  def total
-    @total
-  end
+  #def total
+   # @total
+  #end
 
   def add_item(title, amount, quantity=1)
     self.total += amount * quantity
