@@ -6,3 +6,4 @@ class CashRegister
     self.items = []
     self.last_transaction_amount = 0
   end
+end
