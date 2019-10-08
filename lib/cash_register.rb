@@ -1,4 +1,4 @@
 class CashRegister
-  def cash_register
+  def cash_register(new)
     
 end
