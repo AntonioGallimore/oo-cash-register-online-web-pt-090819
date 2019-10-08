@@ -1,14 +1,8 @@
 class CashRegister
-  
-  def cash_register(new)
-    @cash_register = new
+
+  def initialize(discount=0)
+    self.total = 0
+    self.discount = discount
+    self.items = []
+    self.last_transaction_amount = 0
   end
-  
-  def @cash_register
-    @cash_register = new
-  end
-  
-  def @cash_register_with_discount
-    @cash_register_with_discount = new(20)
-  end
-end
