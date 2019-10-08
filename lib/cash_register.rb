@@ -58,3 +58,4 @@ class CashRegister
     self.total -= last_transaction_amount
   end
 end 
+end
