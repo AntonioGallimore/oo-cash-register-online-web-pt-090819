@@ -1,3 +1,4 @@
+require 'pry'
 class CashRegister
 
   def initialize(discount=0)
@@ -6,14 +7,14 @@ class CashRegister
     self.items = []
     self.last_transaction_amount = 0
   end
-  
-    def total=(value)
-    @total = value
-    end
 
-    def discount=(value)
-     @discount = value
-    end
+  def total=(value)
+    @total = value
+  end
+
+  def discount=(value)
+    @discount = value
+  end
 
   def discount
     @discount
@@ -22,12 +23,13 @@ class CashRegister
   def total
     @total
   end
-  
+
   def add_item(title, amount, quantity=1)
     self.total += amount * quantity
     quantity.times do
       items << title
     end
+
     self.last_transaction_amount = amount * quantity
   end
 
@@ -37,6 +39,7 @@ class CashRegister
     else
       puts "There is no discount to apply."
     end
+  end
 
   def items=(list)
     @items = list
@@ -58,4 +61,3 @@ class CashRegister
     self.total -= last_transaction_amount
   end
 end 
-end
