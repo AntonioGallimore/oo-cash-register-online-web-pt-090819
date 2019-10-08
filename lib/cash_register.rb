@@ -37,7 +37,6 @@ class CashRegister
     else
       puts "There is no discount to apply."
     end
-  end
 
   def items=(list)
     @items = list
