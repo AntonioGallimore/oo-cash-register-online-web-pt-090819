@@ -47,23 +47,23 @@ class CashRegister
     end
   end 
 
-  def items=(list)
-    @items = list
-  end
+ # def items=(list)
+  #  @items = list
+  #end
 
   def items
-    @items
-  end
+  #  @items
+  #end
 
-  def last_transaction_amount=(amount)
-    @last_transaction_amount = amount
-  end
+  #def last_transaction_amount=(amount)
+   # @last_transaction_amount = amount
+  #end
 
-  def last_transaction_amount
-    @last_transaction_amount
-  end
+  #def last_transaction_amount
+   # @last_transaction_amount
+  #end
 
-  def void_last_transaction
-    self.total -= last_transaction_amount
-  end
+  #def void_last_transaction
+   # self.total -= last_transaction_amount
+  #end
 end 
